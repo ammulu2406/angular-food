@@ -1,0 +1,90 @@
+<div >
+<div id="div1"><div class="card">
+  <div class="card-header"> CALCULATOR </div>
+  <div class="card-body">
+    <div class="form-group d-flex flex-row">
+      <form>
+        <div>
+          <input [(ngModel)]='num1' type="number" name="num1">&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;&nbsp;&nbsp;
+          <input [(ngModel)]='num2' type="number" name="num2">&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-success" (click)="addition()"> SUM </button>&nbsp;&nbsp;
+          {{result}}
+
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+          <input [(ngModel)]='num3' type="number" name="num3">&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;
+          <input [(ngModel)]='num4' type="number" name="num4">&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-primary" (click)="sub()"> Substract </button><br>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+          <input [(ngModel)]='num5' type="number" name="num5">&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp;
+          <input [(ngModel)]='num6' type="number" name="num6">&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-danger" (click)="multi()"> Multiply </button>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+          <input [(ngModel)]='num7' type="number" name="num7">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+          <input [(ngModel)]='num8' type="number" name="num8">&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-warning" (click)="divide()"> Divide </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+          <input [(ngModel)]='num9' type="number"
+            name="num9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-warning" (click)="square()"> square </button>
+          {{result4}}
+        </div>
+
+      </form>
+    </div>
+  </div>
+   
+  </div>
+  
+</div>
+<form class="bg"style="border:10px solid rgb(50, 2, 2);height: 200px;width:550px;top:30%;left:55%" >
+  <form class="container"  #form1="ngForm"  (ngSubmit)="onFormSubmit()" ngNativeValidate>
+    <br>
+  
+    <mat-slide-toggle (click)="satwik()">khul</mat-slide-toggle>
+    <h2 *ngIf="save">{{one}}</h2>
+      <mat-slide-toggle ngModel name="2" required>ja</mat-slide-toggle>
+    <mat-slide-toggle ngModel name="3" required>sim</mat-slide-toggle>
+    <mat-slide-toggle ngModel name="4" required>sim</mat-slide-toggle>
+
+    
+  </form>
+  <form>
+    <br>
+    <form #form2="ngForm" (ngSubmit)="onFormSubmit()"  ngNativeValidate>
+    <mat-slide-toggle  name="5"required >5</mat-slide-toggle>
+    <mat-slide-toggle  name="6" required>6</mat-slide-toggle>
+    <mat-slide-toggle  name="7"required>7</mat-slide-toggle>
+     <mat-slide-toggle  name="8" required >8</mat-slide-toggle>
+    <br></form></form>
+    
+    <br>
+    <!-- <button mat-raised-button type="submit">BACK</button> -->
+    <!-- <button mat-raised-button type="submit">NEXT</button> -->
+  
+  <!-- </form> -->
+  
+  <!-- <form class="example-form" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()" ngNativeValidate> -->
+  
+    
+  
+    <!-- <p>Form Group Status: {{formGroup.status}}</p> -->
+  
+   
+  
+  </form>
+  <!-- <button mat-rasied-button [disabled]="form2.invalid " type="submit">BACK</button>
+    
+  <button  style="margin-right:530px;margin-left:1100px;" [disabled]= "form1.invalid ">NEXT</button>  -->
+  
+</div>
+
+
+

@@ -1,0 +1,28 @@
+.add{
+    width: 200px;
+    height: 200px;
+    margin: 30px 0 20px 0;
+    border-radius: none;
+}
+.sub{
+    margin-left:50px;
+    top:20%;
+    left:50%;
+}
+.card{
+    
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 280px;
+    background-image:url('https://img.freepik.com/free-vector/yellow-diagonal-geometric-striped-background-with-halftone-detailed_1409-1451.jpg?size=626&ext=jpg&ga=GA1.2.1015465353.1668662801');
+    background-size: cover;
+}
+.bg{
+    margin-top: 15px;
+    margin-right: 200px;
+    margin-left: 420px;
+
+}
+.mat-side-nav{
+    width: auto !important
+  }

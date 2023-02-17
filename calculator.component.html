@@ -1,0 +1,52 @@
+<div id="htmltable">
+<div id="div"><input type="number" [(ngModel)]="a" />+<input type="number" [(ngModel)]="b" />
+<button mat-raised-button type="button" color="Primary" (click)="addition()">Addition</button><input type="text" [(ngModel)]="sum" />
+<br/>
+<input type="number" [(ngModel)]="x" />-<input type="number" [(ngModel)]="y" />
+<button mat-raised-button type="button" (click)="substraction()">Substraction</button><input type="text" [(ngModel)]="result" />
+<br/>
+<input type="number" [(ngModel)]="p" />*<input type="number" [(ngModel)]="q" />
+<button mat-raised-button type="button" (click)="multiplication()">Multiplication</button><input type="text" [(ngModel)]="solution" />
+<br/>
+<input type="number" [(ngModel)]="s" />/<input type="number" [(ngModel)]="t" />
+<button mat-raised-button type="button" (click)="division()">Division</button><input type="text" [(ngModel)]="result1" />
+<br/>
+<input type="number" [(ngModel)]="num" />
+<button mat-raised-button type="button" (click)="squareRoot()">SquareRoot</button><input type="text" [(ngModel)]="number" />
+</div>
+
+<form class="form">
+    <form class="container"  #form1="ngForm"  (ngSubmit)="onFormSubmit()" ngNativeValidate>
+      <br>
+      <mat-slide-toggle ngModel name="1" required>KUL </mat-slide-toggle>
+      <mat-slide-toggle ngModel name="2" required>JAA</mat-slide-toggle>
+    
+      <mat-slide-toggle ngModel name="3" required>SIM</mat-slide-toggle>
+      <mat-slide-toggle ngModel name="4" required>Sim</mat-slide-toggle>
+    </form>
+    <form id="form-2">
+      <br>
+      <form #form2="ngForm" (ngSubmit)="onFormSubmit()"  ngNativeValidate>
+      <mat-slide-toggle ngModel name="5"required >BAND</mat-slide-toggle>
+      <mat-slide-toggle ngModel name="6" required>HO</mat-slide-toggle>
+      
+      <mat-slide-toggle ngModel name="7"required>JAA</mat-slide-toggle>
+      
+      <mat-slide-toggle ngModel name="7"required>SIM</mat-slide-toggle>
+    
+      <mat-slide-toggle ngModel name="8" required >SIM</mat-slide-toggle>
+      <br></form></form>
+      
+      <br>
+      
+     
+    
+    </form>
+  
+
+    <a id="back" mat-button routerLink="/Home" [disabled]="form2.invalid" type="submit">BACK</a>
+      
+    <a id="next" mat-button routerLink="/graph" [disabled]="form1.invalid">NEXT</a>
+    <button (click)="downloadAsPDF()">eportpdf</button> 
+    </div>
+    

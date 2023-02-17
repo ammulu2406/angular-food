@@ -1,0 +1,262 @@
+<!-- <div id="top" > -->
+
+    <nav>
+<div><img class="img1" (click)="openNav()" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-5.png" width="30px" height="30px" right="100"/></div>
+      
+      <label class="logo"> FOODS IN HYDERABAD</label>
+
+      
+      <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Services</a></li>
+
+        <li><a href="#">Contact</a></li>
+
+        <li><a href="#">Feedback</a></li>
+
+      </ul>
+     
+  
+    </nav>
+
+    <section></section>
+    
+    <div id="mySidenav" class="sidenav">
+      
+   
+        <div class="resizer" ></div>
+        <a href="" class="closebtn" (click)="closeNav()">&times;</a>
+        <a href="#">Home</a><hr>
+        <a href="#">Services</a><hr>
+        <a href="#">Abouts</a><hr>
+        <a href="#">Contact</a><hr>
+        </div>
+    <br>
+    <marquee direction = "right"><h2 style="color: black;"><i><u>Welcome</u></i></h2></marquee> 
+    <div class="ra">
+      <img src="https://i0.wp.com/news.jugaadin.com/wp-content/uploads/2020/07/HYDERABAD.png?resize=749%2C372&ssl=1" width="1520px" height="580px"><br><br>
+           <marquee direction = "left"><h1 style="color:black;"><b><i>Taste Of Hyderabad</i></b></h1></marquee> 
+      </div>
+
+<div class="card" (click)="cardClicked()" [@cardFlip]="data.state">
+
+  <div class="face back">
+    <meta name="viewport" content="width=100, initial-scale=1">
+    <style>
+      .top {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        color: black;
+      }
+    </style>
+     <img src="http://spicesnflavors.com/wp-content/uploads/2018/04/karachi-biscuits-2-min.jpg">
+     <h3>Chai Biscute</h3>
+        <div class="top" Tea></div>
+
+  
+   </div>
+  
+   <div class="face front">
+  
+     <img src="https://imgmedia.lbb.in/61851741_441696136394451_3784392928806661307_n_1576055248907.jpg">
+     <h3>Biscute's</h3>
+  
+      </div>
+  
+   
+  
+  </div>
+  
+  
+  
+  <br><br>
+  
+  <div class="card2" (click)="card2Clicked()" [@card2Flip]="datato.state">
+  
+   <div class="face ab">
+  
+     <img src="https://connect-images.viago.io/w_771,c_scale,e_sharpen:70,q_95/09b02e107f56945df2534687f9f70224381b5b31f6d125b8d96f935f700b924c">
+     <h3>Marag</h3>
+   </div>
+  
+   <div class="face ba">
+  
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgE4FS91B2lRjo5hdg2827gH49ZXPzRWg4zUCkj4zY9I20P6ZJtnWyc-2ClcrUb2ksTAY&usqp=CAU">
+     <h3>Roti</h3>
+      </div>
+  
+   
+  
+  </div>
+  
+  <br><br>
+  
+  <div class="card3" (click)="card3Clicked()" [@card3Flip]="datath.state">
+  
+   <div class="face cd">
+  
+     <img src="https://i0.wp.com/news.jugaadin.com/wp-content/uploads/2020/07/khatti-dal.jpg?w=236&ssl=1">
+     <h3>Khatti dal</h3>  
+   </div>
+  
+   <div class="face dc">
+  
+     <img src="https://yummyindiankitchen.com/wp-content/uploads/2020/09/bagara-rice-recipe-hyderabadi.jpg">
+     <h3>Bagara Rice</h3>
+      </div>
+  
+   
+  
+  </div>
+  
+  <br><br>
+  
+  <div class="card4" (click)="card4Clicked()" [@card4Flip]="datatj.state">
+  
+   <div class="face ef">
+  
+     <img src="https://feast-it-web-prod.imgix.net/b33f97ea-aaf1-42a3-9bb9-7351e0b1d69e/PN4O5SYKml/Feast_It_hyderabadi-dhaba-limited-P1A-7qVtEy.png">
+     <h3>Kebab</h3>
+   </div>
+  
+   <div class="face fe">
+  
+     <img src="https://therecipecritic.com/wp-content/uploads/2020/02/tandoorichicken-667x1000.jpg">
+     <h3>Chicken Tandoori</h3>
+      </div>
+  
+   
+  
+     </div>
+  
+     <br><br>
+  
+  <div class="card5" (click)="card5Clicked()" [@card5Flip]="datatk.state">
+  
+   <div class="face gh">
+  
+     <img src="https://www.stockimagefactory.com/StockImageFactory.com-photo-ID(0000170603)hyderabadi-mutton-paya-nehari-nahari-or-nihari-masala.jpg">
+     <h3>Mutton Paya</h3>
+   </div>
+  
+   <div class="face hg">
+  
+     <img src="https://b.zmtcdn.com/data/dish_photos/c34/6dfb46be94bdc6f713c41f84b1259c34.jpg">
+     <h3>Naan's</h3>
+      </div>
+  
+   
+  
+     </div>
+  
+     
+  
+     <br><br>
+  
+  <div class="card6" (click)="card6Clicked()" [@card6Flip]="datatl.state">
+  
+   <div class="face ij">
+  
+     <img src="https://raodyrecipes.com/wp-content/uploads/2020/08/Adjustments-9.jpg">
+     <h3>Green Chicken</h3>
+   </div>
+  
+   <div class="face ji">
+  
+     <img src="https://www.cookingcarnival.com/wp-content/uploads/2020/05/tandoori-roti-6.jpg">
+     <h3>Tandoori</h3>
+      </div>
+  
+   
+  
+     </div>
+  
+     
+  
+     <br><br>
+  
+  <div class="card7" (click)="card7Clicked()" [@card7Flip]="datata.state">
+  
+   <div class="face kl">
+  
+     <img src="https://www.thedeliciouscrescent.com/wp-content/uploads/2016/06/Easy-Hyderabadi-Chicken-Biryani-4.jpg">
+     <h3>Hyderbadi Chicken-Dum Briyani</h3>
+   </div>
+  
+   <div class="face lk">
+  
+     <img src="https://1.bp.blogspot.com/-VycQdykYXUo/Xtk4TG3bk4I/AAAAAAAAhz4/5T1IIOG_6rMG4MT_sfp4v-LK5qPWkgAXgCK4BGAsYHg/s4032/20200506_130037.jpg">
+     <h3>Raitha</h3>
+      </div>
+  
+   
+  
+     </div>
+  
+     <br><br>
+  
+  <div class="card8" (click)="card8Clicked()" [@card8Flip]="datats.state">
+  
+   <div class="face mn">
+  
+     <img src="https://static.finmail.com/wp-content/uploads/2021/04/09112851/side-view-shawarma-with-fried-potatoes-board-cookware_176474-3215.jpg">
+     <h3>Shawarma</h3>
+   </div>
+  
+   <div class="face nm">
+  
+     <img src="https://kitchenofdebjani.com/wp-content/uploads/2018/05/Hyderabadi-Haleem-Recipe.jpg">
+     <h3>Haleem</h3>
+      </div>
+  
+   
+  
+     </div>
+  
+     <br><br>
+  
+  <div class="card9" (click)="card9Clicked()" [@card9Flip]="datatd.state">
+  
+   <div class="face op">
+  
+     <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/10/pumpkin-kheer-recipe-11-500x500.jpg">
+     <h3>kheer</h3>
+   </div>
+  
+   <div class="face po">
+  
+     <img src="   https://www.cookwithmanali.com/wp-content/uploads/2018/06/Sheer-Khurma.jpg">
+     <h3>Sheer-Khurma</h3>
+      </div>
+  
+   
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+     
+  <!-- <a href="#top" ><button class="raj">Go To Top</button></a> -->
+  <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+
+    <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()"
+
+      style="height: 50px;width:50px;">
+
+      <i class="fa-solid fa-up"></i> <i class="fas fa-chevron-up" ></i>
+      </button>
+      </div>
+       <div>
+        <a href="#" class="next">NEXT &raquo;</a>
+        </div>
+    
+
+  
